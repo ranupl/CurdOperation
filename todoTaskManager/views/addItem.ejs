@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Item</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1>TODO FORM</h1>
+        <form action="/submit" method="POST" class="form">
+          <label for="title">Title</label>
+          <input type="text" value="" name="title" placeholder="title" />
+          <label for="desc">Description</label>
+          <input type="text" value="" name="desc" placeholder="add description" />
+
+          <label for="status">Status</label>
+          <select class="form-select" aria-label="Default select example" name="status">
+            <option selected>Select one</option>
+            <option value="done">Done</option>
+            <option value="panding">Panding</option>
+            <option value="Achieved">Achieved</option>
+          </select>
+
+          <label for="priority">Priority</label>
+          <select class="form-select" aria-label="Default select example" name="priority">
+            <option selected>Select one</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <label for="cDate">Create Date</label>
+          <input type="Date" value="" name="cDate" placeholder="date" />
+          <label for="dDate">Due Date</label>
+          <input type="Date" value="" name="dDate" placeholder="date" />
+          <!-- <button type="button">Update</button> -->
+          <!-- <button type="button">Delete</button> -->
+          <button type="submit" class="btn">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

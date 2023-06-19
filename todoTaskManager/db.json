@@ -1,0 +1,31 @@
+{
+  "tasks": [
+    {
+      "title": "apple",
+      "desc": "is a sweet fruit",
+      "status": "panding",
+      "priority": "low",
+      "cDate": "2023-07-06",
+      "dDate": "2023-06-06",
+      "id": "d15f1d7fd45b985008337abb15e12596"
+    },
+    {
+      "title": "demo",
+      "desc": "Demo description",
+      "status": "panding",
+      "priority": "medium",
+      "cDate": "2023-07-06",
+      "dDate": "2023-06-06",
+      "id": "f714ac83770a612ff90e43b6f13d3a20"
+    },
+    {
+      "title": "mango",
+      "desc": "is a sweet fruit",
+      "status": "done",
+      "priority": "high",
+      "cDate": "2023-06-30",
+      "dDate": "2023-06-06",
+      "id": "c926ccdda0a003fddad6aadfcda12f95"
+    }
+  ]
+}

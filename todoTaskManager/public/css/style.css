@@ -1,0 +1,60 @@
+.container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.todo-box{
+    width: 70%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table {
+ width: 100%;
+ text-align: center;
+ margin-top: 60px;
+}
+
+.table tr th{
+    background-color: greenyellow;
+    padding: .5em;
+}
+
+.table tr td{
+    background-color: aliceblue;
+}
+
+.form-box{
+    width: 70%;
+}
+
+.form{
+    margin-top: 60px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    line-height: 2em;
+    margin-bottom: 10px;
+}
+
+.form-select{
+    margin-bottom: 10px;
+    height: 5vh;
+}
+
+.btn{
+    height: 5vh;
+    background-color: green;
+    border:none;
+    cursor: pointer;
+}
+
+.icon{
+    cursor: pointer;
+}

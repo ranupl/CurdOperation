@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <a href="/addItem">ADD TASK</a>
+    <!-- <a href="getdata">GET DATA</a> -->
+    <div class="container">
+      <div class="todo-box">
+        <h1>Todo App</h1>
+        <table class="table">
+         <thead>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Priority</th>
+            <th>Created date</th>
+            <th>Due Date</th>
+            <th>Action</th>
+          </tr>
+         </thead>
+         <tbody>
+            <% tasks.forEach((user) => { %>
+                <tr>
+                  <td><%= user.id %></td>
+                  <td><%= user.title %></td>
+                  <td><%= user.desc %></td>
+                  <td><%= user.status %></td>
+                  <td><%= user.priority %></td>
+                  <td><%= user.cDate %></td>
+                  <td><%= user.dDate %></td>
+                  <td><a href="/editItem/<%= user.id %>"><i class="fa-solid fa-pen icon"></i></a>&nbsp;&nbsp; &nbsp;
+                    <a href="/delete/<%= user.id %>"><i class="fa-solid fa-trash icon"></i></a></td>
+                </tr>
+            <% }); %>
+         </tbody>
+          <!-- <tr>
+            <td>mango</td>
+            <td>is a sweet fruit</td>
+            <td>done</td>
+            <td>low</td>
+            <td>1/2/2023</td>
+            <td>1/2/2023</td>
+            <td>
+              <i class="fa-solid fa-pen icon"></i>&nbsp;&nbsp; &nbsp;<i
+                class="fa-solid fa-trash icon"
+              ></i>
+            </td>
+          </tr> -->
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
